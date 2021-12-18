@@ -39,15 +39,15 @@ function generatePassword() {
 
     } else {
         
-        confirmNumber = confirm("Will this contain numbers?");
-        confirmCharacter = confirm("Will this contain special characters?");
-        confirmUppercase = confirm("Will this contain Uppercase letters?");
-        confirmLowercase = confirm("Will this contain Lowercase letters?");
+        confirmNumber = confirm("Confirm if you want numbers. Cancel, if not.");
+        confirmCharacter = confirm("Confirm if you want special characters. Cancel, if not.");
+        confirmUppercase = confirm("Confirm if you want capital letters. Cancel, if not.");
+        confirmLowercase = confirm("Confirm if you want lowercase letters. Cancel, if not.");
     };
 
   
     if (!confirmCharacter && !confirmNumber && !confirmUppercase && !confirmLowercase) {
-        choices = alert("You must choose a criteria!");
+        choices = alert("You must choose a criteria.");
 
     }
 
